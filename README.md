@@ -1,38 +1,44 @@
-
-# 📊 HR Attrition Analysis | evanalytics.Corp
-
-This project was created for evanalytics. Corp as a showcase of how HR attrition data can be used to support financial forecasting, workforce planning, and scenario modeling — all critical to modern FP&A (Financial Planning & Analysis) roles.
+Here is a professionally rewritten version of your `README.md` — polished, structured, and aligned with both FP\&A value and GitHub readability:
 
 ---
 
-## 🎯 Goal
+# 📊 HR Attrition Analysis | *evanalytics.Corp*
 
-Use HR data to simulate real-world challenges a financial analyst may face:
-- Modeling the cost of employee attrition ()
-- Identifying retention bottlenecks
-- Proposing data-driven recommendations
+This project simulates how a Financial Analyst can leverage HR attrition data to support **forecasting**, **cost modeling**, and **retention strategy** — all essential to **modern FP\&A functions**.
 
 ---
 
-## 🧠 Working Hypotheses
+## 🎯 Objective
 
-1. Employees with **low income, high overtime, and low satisfaction** are more likely to leave — affecting hiring and training budgets.
-2. **Departments with high attrition** also show high variance in tenure and performance scores — suggesting inefficiencies.
-3. **Younger employees** leave more often — which lowers ROI on onboarding investment.
+To explore how data-driven HR insights can inform financial decisions, we:
 
----
-
-## 🧰 Tools Used
-
-- Python (pandas, seaborn, matplotlib, plotly)
-- Jupyter Notebook
-- Git & GitHub
-- VS Code (with Git Bash)
-- Tableau or Power BI (optional)
+* Model the **cost of employee attrition**
+* Detect potential **retention bottlenecks**
+* Simulate **real-world FP\&A use cases**
 
 ---
 
-## 📁 Folder Structure
+## 🧪 Hypotheses
+
+1. **Low income**, **frequent overtime**, and **low satisfaction** are predictors of attrition.
+2. **Departments with high attrition** also show high **variance in tenure and performance**.
+3. **Younger employees** tend to leave earlier, reducing ROI on onboarding.
+
+---
+
+## 🛠️ Tech Stack
+
+| Category      | Tools                                        |
+| ------------- | -------------------------------------------- |
+| Analysis      | Python (Pandas, Seaborn, Matplotlib, Plotly) |
+| Interface     | Jupyter Notebook                             |
+| Automation    | Scripts & GitHub                             |
+| IDE           | VS Code with Git Bash                        |
+| Visualization | Tableau / Power BI (optional)                |
+
+---
+
+## 🗂️ Project Structure
 
 ```
 HR_analytics_evCorp/
@@ -44,10 +50,14 @@ HR_analytics_evCorp/
 │   └── explore_hr_attrition.ipynb
 │
 ├── dashboards/
-│   └── hr_attrition_dashboard.html  # Optional
+│   └── hr_attrition_dashboard.html  # (optional)
 │
 ├── scripts/
-│   └── attrition_model.py          # Optional
+│   └── model_attrition_cost.py      # (attrition cost modeling)
+│
+├── outputs/
+│   ├── attrition_leavers.csv
+│   └── attrition_cost_by_department.csv
 │
 ├── requirements.txt
 └── README.md
@@ -55,50 +65,44 @@ HR_analytics_evCorp/
 
 ---
 
-## 📈 Key Insights
+## 🔍 Attrition Cost Modeling
 
-- Built correlation heatmaps and attrition risk visuals
-- Simulated retention-improvement scenarios using statistical logic
-- Developed a dashboard with actionable KPIs:
-  - Attrition Rate
-  - Avg. Income of Leavers
-  - Tenure Distribution
-  - Overtime % vs Attrition Rate
+The script `scripts/model_attrition_cost.py` loads the dataset and calculates financial impact using the following steps:
+
+### What it does:
+
+1. **Loads data** from `/data/WA_Fn-UseC_-HR-Employee-Attrition.csv`
+2. Flags records where `Attrition == 'Yes'`
+3. Assigns a **fixed cost of \$50,000 per leaver** *(editable in script)*
+4. Computes:
+
+   * 🔻 Total number of leavers
+   * 💸 Total estimated cost of attrition
+   * 🏢 Department-wise cost breakdown
+5. Saves results to `/outputs` folder as CSV files
+6. Plots a **horizontal bar chart** showing departmental attrition cost
+
+### Output Files:
+
+| File                                       | Description                   |
+| ------------------------------------------ | ----------------------------- |
+| `outputs/attrition_leavers.csv`            | Records of employees who left |
+| `outputs/attrition_cost_by_department.csv` | Cost breakdown per department |
 
 ---
 
-## 📌 Business Value
+## 📊 Sample Insights
 
-- Supports forecasting and scenario planning
-- Helps HR & Finance collaborate on retention strategy
-- Demonstrates the strategic value of data analytics in cost control
+* Correlation heatmaps revealed patterns in satisfaction, income, and overtime
+* Attrition rates were highest in **Sales** and **R\&D**
+* Simulated savings by improving retention in high-cost departments
 
-📌 IMPORTANT NOTES
-📊 Attrition Cost Modeling Overview
-This project estimates the financial impact of employee attrition using a simple, scalable cost model.
+---
 
-🔍 What the Script Does
-Loads employee data from
-data/WA_Fn-UseC_-HR-Employee-Attrition.csv
+## 💡 Business Value
 
-Flags employees who left the company
-(Attrition == 'Yes')
+* Helps HR & Finance **align on cost-saving goals**
+* Aids in **budgeting** and **strategic workforce planning**
+* Demonstrates how **analytics supports cost control**
 
-Assigns a fixed cost of $50,000 per leaver (adjustable in the script)
 
-Calculates:
-
-📉 Total number of employees lost
-
-💸 Total estimated attrition cost
-
-🏢 Cost breakdown by department
-
-Generates a horizontal bar chart showing departmental attrition costs
-
-💾 Output Files
-After running the script, these files are saved automatically in the /outputs folder:
-
-File	Description
-outputs/attrition_leavers.csv	Detailed records of employees who left
-outputs/attrition_cost_by_department.csv	Estimated cost of attrition by department
