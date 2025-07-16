@@ -8,7 +8,7 @@ This project was created for evanalytics. Corp as a showcase of how HR attrition
 ## 🎯 Goal
 
 Use HR data to simulate real-world challenges a financial analyst may face:
-- Modeling the cost of employee attrition
+- Modeling the cost of employee attrition ()
 - Identifying retention bottlenecks
 - Proposing data-driven recommendations
 
@@ -72,3 +72,36 @@ HR_analytics_evCorp/
 - Supports forecasting and scenario planning
 - Helps HR & Finance collaborate on retention strategy
 - Demonstrates the strategic value of data analytics in cost control
+
+IMPORTANT NOTES 
+
+📊 Attrition Cost Modeling
+This project estimates the financial impact of employee attrition using a basic cost model.
+
+🔍 What It Does:
+Loads employee data from data/WA_Fn-UseC_-HR-Employee-Attrition.csv
+
+Flags employees who left the company (Attrition = 'Yes')
+
+Assigns a fixed cost of $50,000 per leaver (customizable)
+
+Calculates:
+
+Total number of leavers
+
+Total estimated attrition cost
+
+Cost breakdown by department
+
+📂 Output Files:
+Saved automatically in the /outputs folder after running the script:
+
+outputs/attrition_leavers.csv
+→ Detailed records of employees who left
+
+outputs/attrition_cost_by_department.csv
+→ Summary of attrition cost per department
+
+🧠 Script Location:
+You can find the full implementation in:
+scripts/model_attrition_cost.py
