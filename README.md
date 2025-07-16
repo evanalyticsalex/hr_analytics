@@ -1,5 +1,5 @@
 
-# 📊 HR Attrition Analysis | evanalytics. Corp
+# 📊 HR Attrition Analysis | evanalytics.Corp
 
 This project was created for evanalytics. Corp as a showcase of how HR attrition data can be used to support financial forecasting, workforce planning, and scenario modeling — all critical to modern FP&A (Financial Planning & Analysis) roles.
 
