@@ -73,35 +73,32 @@ HR_analytics_evCorp/
 - Helps HR & Finance collaborate on retention strategy
 - Demonstrates the strategic value of data analytics in cost control
 
-IMPORTANT NOTES 
+📌 IMPORTANT NOTES
+📊 Attrition Cost Modeling Overview
+This project estimates the financial impact of employee attrition using a simple, scalable cost model.
 
-📊 Attrition Cost Modeling
-This project estimates the financial impact of employee attrition using a basic cost model.
+🔍 What the Script Does
+Loads employee data from
+data/WA_Fn-UseC_-HR-Employee-Attrition.csv
 
-🔍 What It Does:
-Loads employee data from data/WA_Fn-UseC_-HR-Employee-Attrition.csv
+Flags employees who left the company
+(Attrition == 'Yes')
 
-Flags employees who left the company (Attrition = 'Yes')
-
-Assigns a fixed cost of $50,000 per leaver (customizable)
+Assigns a fixed cost of $50,000 per leaver (adjustable in the script)
 
 Calculates:
 
-Total number of leavers
+📉 Total number of employees lost
 
-Total estimated attrition cost
+💸 Total estimated attrition cost
 
-Cost breakdown by department
+🏢 Cost breakdown by department
 
-📂 Output Files:
-Saved automatically in the /outputs folder after running the script:
+Generates a horizontal bar chart showing departmental attrition costs
 
-outputs/attrition_leavers.csv
-→ Detailed records of employees who left
+💾 Output Files
+After running the script, these files are saved automatically in the /outputs folder:
 
-outputs/attrition_cost_by_department.csv
-→ Summary of attrition cost per department
-
-🧠 Script Location:
-You can find the full implementation in:
-scripts/model_attrition_cost.py
+File	Description
+outputs/attrition_leavers.csv	Detailed records of employees who left
+outputs/attrition_cost_by_department.csv	Estimated cost of attrition by department
