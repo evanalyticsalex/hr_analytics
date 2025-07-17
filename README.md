@@ -1,7 +1,3 @@
-Here is a professionally rewritten version of your `README.md` — polished, structured, and aligned with both FP\&A value and GitHub readability:
-
----
-
 # 📊 HR Attrition Analysis | *evanalytics.Corp*
 
 This project simulates how a Financial Analyst can leverage HR attrition data to support **forecasting**, **cost modeling**, and **retention strategy** — all essential to **modern FP\&A functions**.
