@@ -89,6 +89,19 @@ The script `scripts/model_attrition_cost.py` loads the dataset and calculates fi
 
 ## 📊 Sample Insights
 
+---
+
+## 📊 Attrition Cost by Department
+
+![Attrition Cost](outputs/plot_attrition_cost.png)
+
+## 👥 Total Leavers by Department
+
+![Leavers](outputs/plot_Number_of_Employees_Who_Left.png)
+
+---
+
+
 * Correlation heatmaps revealed patterns in satisfaction, income, and overtime
 * Attrition rates were highest in **Sales** and **R\&D**
 * Simulated savings by improving retention in high-cost departments
