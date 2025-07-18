@@ -38,25 +38,45 @@ To explore how data-driven HR insights can inform financial decisions, we:
 
 ```
 HR_analytics_evCorp/
-│
-├── data/
-│   └── WA_Fn-UseC_-HR-Employee-Attrition.csv
-│
-├── notebooks/
-│   └── explore_hr_attrition.ipynb
-│
-├── dashboards/
-│   └── hr_attrition_dashboard.html  # (optional)
-│
-├── scripts/
-│   └── model_attrition_cost.py      # (attrition cost modeling)
-│
-├── outputs/
-│   ├── attrition_leavers.csv
-│   └── attrition_cost_by_department.csv
-│
+.
+├── data
+│   └── WA_Fn-UseC_-HR-Employee-Attrition.csv
+├── kaggle.json
+├── notebooks
+│   ├── correlation_heatmap.ipynb
+│   ├── explore_dataset.ipynb
+│   ├── explore_dataset2.ipynb
+│   └── plot_attrition_cost.ipynb
+├── outputs
+│   ├── attrition_cost_by_department.csv
+│   ├── attrition_leavers.csv
+│   ├── correlation_heatmap.png
+│   ├── percentages_attrition_rate_by_department.png
+│   ├── plot_attrition_cost.png
+│   ├── plot_Number_of_Employees_Who_Left.png
+│   └── share_of_total_attrition_by_department.png
+├── README.md
 ├── requirements.txt
-└── README.md
+├── scripts
+│   ├── analyze_hr_data.py
+│   ├── load_kaggle_data.py
+│   └── model_attrition_cost.py
+├── structure.txt
+├── venv
+│   ├── bin
+│   ├── etc
+│   ├── include
+│   ├── lib
+│   ├── pyvenv.cfg
+│   └── share
+└── venv310
+    ├── etc
+    ├── Lib
+    ├── pyvenv.cfg
+    ├── Scripts
+    └── share
+
+16 directories, 21 files
 ```
 
 ---
