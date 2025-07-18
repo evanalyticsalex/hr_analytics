@@ -106,6 +106,73 @@ The script `scripts/model_attrition_cost.py` loads the dataset and calculates fi
 * Attrition rates were highest in **Sales** and **R\&D**
 * Simulated savings by improving retention in high-cost departments
 
+
+Explanation of Correlation Heatmap 
+![HeatMap](outputs/correlation_heatmap.png)
+---
+
+## 📊 What You’re Seeing
+
+This is a **correlation matrix heatmap**, where:
+
+* Each square represents the **correlation** between two variables.
+* Values range from:
+
+  * `+1.00`: **Perfect positive** correlation (when one goes up, so does the other)
+  * `0.00`: **No correlation**
+  * `-1.00`: **Perfect negative** correlation (when one goes up, the other goes down)
+* Colors:
+
+  * 🔴 **Redder** = stronger correlation (positive or negative)
+  * 🔵 **Bluer** = weaker or no correlation
+
+---
+
+## 🔎 Focus: Correlation with `Attrition`
+
+You want to understand what variables are **related to employee attrition** — so let's read across the `Attrition` row:
+
+| Variable            | Correlation | Meaning                                                           |
+| ------------------- | ----------- | ----------------------------------------------------------------- |
+| `OverTime`          | **+0.25**   | Strongest positive — more overtime → higher chance of attrition ✅ |
+| `MonthlyIncome`     | **-0.16**   | Negative — lower income → higher chance of leaving                |
+| `JobLevel`          | **-0.17**   | Lower job level → more likely to leave                            |
+| `TotalWorkingYears` | **-0.17**   | Fewer working years → more likely to leave                        |
+| `Age`               | **-0.16**   | Younger employees are more likely to leave                        |
+| `YearsAtCompany`    | **-0.13**   | Less time at company → higher attrition risk                      |
+
+Everything else is near **0.00**, so weak or no relationship.
+
+
+## ✅ Most Insightful Patterns
+
+### 1. **OverTime is the most powerful predictor**
+
+* Correlation = `+0.25`
+* Suggests employees working overtime are **more likely to quit** (burnout risk)
+
+### 2. **Lower MonthlyIncome, Lower JobLevel, Younger Age**
+
+* All have **negative correlations** with attrition
+* Suggests people leave when they:
+
+  * Feel underpaid
+  * Are in junior roles
+  * Are early in their career
+
+### 3. **Tenure indicators matter**
+
+* `YearsAtCompany`, `TotalWorkingYears`: negative correlation
+* Less experience → more likely to leave (possibly due to unmet expectations or lack of fit)
+
+---
+
+## ⚠️ Caution
+
+* These are **correlations**, not causation.
+* Just because `OverTime` is positively correlated with `Attrition` doesn’t **prove** it causes attrition, but it's a strong signal.
+
+
 ---
 
 ## 💡 Business Value
