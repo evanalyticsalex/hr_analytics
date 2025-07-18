@@ -165,15 +165,12 @@ Everything else is near **0.00**, so weak or no relationship.
 * `YearsAtCompany`, `TotalWorkingYears`: negative correlation
 * Less experience → more likely to leave (possibly due to unmet expectations or lack of fit)
 
----
 
 ## ⚠️ Caution
 
 * These are **correlations**, not causation.
 * Just because `OverTime` is positively correlated with `Attrition` doesn’t **prove** it causes attrition, but it's a strong signal.
 
-
----
 
 ## 💡 Business Value
 
