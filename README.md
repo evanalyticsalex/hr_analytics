@@ -1,4 +1,5 @@
-# 📊 HR Attrition Analysis | *IBM*  Analysed by evanalytics
+# 📊 HR Attrition Analysis | *IBM*  
+*Analysed by evanalytics*
 
 This project simulates how a Financial Analyst can leverage HR attrition data to support **forecasting**, **cost modeling**, and **retention strategy** — all essential to **modern FP\&A functions**.
 
@@ -128,30 +129,29 @@ This chart shows the attrition rate grouped by employee job satisfaction.
 
 ## 🏢 Attrition by Department
 
-![Attrition by Department](outputs/plot_attrition_cost.png)
+![Attrition by Department](outputs/attrition_by_department.png)
 
 Departments with higher headcount loss represent greater risk in operational continuity and increased hiring/training costs.
 
 ---
 
-## 👥 Attrition by Job Role
+## 👥 Attrition  by Job Role
 
-![Attrition by Job Role](outputs/share_of_total_attrition_by_department.png)
+![Attrition by Job Role](outputs/attrition_by_jobrole.png)
 
 Some job roles — especially client-facing or high-stress roles — exhibit notably higher attrition rates. This helps target role-specific retention programs.
 
+## 👥 Attrition  by Job Satisfaction
+
+![Attrition by Job Satisfaction](outputs/attrition_by_jobsatisfaction.png)
+
+
+## 👥 Attrition  by Overtime
+
+![Attrition by Overtime](outputs/attrition_by_overtime.png)
+
 ---
 
-## ⏳ Attrition by Tenure
-
-![Attrition by Tenure](outputs/percentages_attrition_rate_by_department.png)
-
-This chart shows which tenure ranges (years at company) are most sensitive. Often, employees leave either very early (0–2 years) or around the 5-year mark.
-
----
-
-
-![Attrition Cost](outputs/plot_attrition_cost.png)
 
 ## 👥 Total Leavers by Department
 
