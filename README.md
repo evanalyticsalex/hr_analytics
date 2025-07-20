@@ -111,7 +111,45 @@ The script `scripts/model_attrition_cost.py` loads the dataset and calculates fi
 
 ---
 
-## 📊 Attrition Cost by Department
+## 📊 Attrition Cost 
+
+
+## 🧠 Attrition by Job Satisfaction Level
+
+![Job Satisfaction Chart](outputs/attrition_by_jobsatisfaction.png)
+
+This chart shows the attrition rate grouped by employee job satisfaction.
+
+- **Low satisfaction** = highest attrition
+- **Very High satisfaction** = lowest attrition
+- The trend is **clear and visual**: satisfied employees stay longer
+
+---
+
+## 🏢 Attrition by Department
+
+![Attrition by Department](outputs/plot_attrition_cost.png)
+
+Departments with higher headcount loss represent greater risk in operational continuity and increased hiring/training costs.
+
+---
+
+## 👥 Attrition by Job Role
+
+![Attrition by Job Role](outputs/share_of_total_attrition_by_department.png)
+
+Some job roles — especially client-facing or high-stress roles — exhibit notably higher attrition rates. This helps target role-specific retention programs.
+
+---
+
+## ⏳ Attrition by Tenure
+
+![Attrition by Tenure](outputs/percentages_attrition_rate_by_department.png)
+
+This chart shows which tenure ranges (years at company) are most sensitive. Often, employees leave either very early (0–2 years) or around the 5-year mark.
+
+---
+
 
 ![Attrition Cost](outputs/plot_attrition_cost.png)
 
@@ -129,6 +167,9 @@ The script `scripts/model_attrition_cost.py` loads the dataset and calculates fi
 
 Explanation of Correlation Heatmap 
 ![HeatMap](outputs/correlation_heatmap.png)
+
+
+
 ---
 
 ## 📊 What You’re Seeing
