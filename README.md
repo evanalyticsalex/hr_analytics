@@ -1,4 +1,4 @@
-# 📊 HR Attrition Analysis | *evanalytics.Corp*
+# 📊 HR Attrition Analysis | *IBM*  Analysed by evanalytics
 
 This project simulates how a Financial Analyst can leverage HR attrition data to support **forecasting**, **cost modeling**, and **retention strategy** — all essential to **modern FP\&A functions**.
 
