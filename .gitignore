@@ -10,3 +10,25 @@ __pycache__/
 
 # Ignore API keys or personal configs
 .kaggle/
+
+# Jupyter + Python noise
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Data files
+*.csv
+*.tsv
+*.xlsx
+
+# Plots and figures
+*.png
+*.jpg
+*.pdf
+
+# Outputs
+outputs/
+*.log
+
+# System files
+.DS_Store
